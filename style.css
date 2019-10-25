@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html, body{
+    /* To make the foter stick to bottom of page */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    /*use for desktop background */
+    /* background-image: url('./images/bg-pattern-desktop.svg'); */
+    font-size: 16px;
+}
+
+.container {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 1em 2em;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    margin: 10% auto;
+}
+
+.heading {
+    font-size: 1.5em;
+    letter-spacing: 0.4em;
+    margin-bottom: 1em;
+    color: hsl(0, 6%, 24%);
+}
+
+.heading-top-line{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.main-content > p {
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 3em;
+}
+
+.email-area {
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.email-area > form {
+    margin-left: auto;
+}
+
+.email-area > img{
+    border-radius: 5px;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+footer {
+    flex-shrink: 0;
+    margin: 0 auto;
+    width: 60%;
+}
