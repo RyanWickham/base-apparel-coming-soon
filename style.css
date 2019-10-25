@@ -73,5 +73,5 @@ body {
 footer {
     flex-shrink: 0;
     margin: 0 auto;
-    width: 60%;
+    /* width: 60%; */
 }
