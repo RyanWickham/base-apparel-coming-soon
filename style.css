@@ -13,9 +13,13 @@ html, body{
 
 body {
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    /*use for desktop background */
-    /* background-image: url('./images/bg-pattern-desktop.svg'); */
     font-size: 16px;
+}
+
+@media only screen and (min-width: 376px) {
+    body {
+        background-image: url('./images/bg-pattern-desktop.svg');
+    }
 }
 
 .container {
@@ -26,9 +30,46 @@ body {
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 376px) {
+    .container {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+}
+
+/****** Logo ******/
+
 .logo {
     margin: 1em 2em;
 }
+
+@media only screen and (min-width: 376px) {
+    .logo {
+        margin-left: 10%;
+    }
+}
+
+/****** Image ******/
+
+.image {
+    width: 100%;
+}
+
+@media only screen and (min-width: 376px) {
+    .image {
+        align-self: flex-end;
+        width: 40%;
+        order: 3;
+        margin: auto 0;
+    }
+
+    .image > img {
+        width: 100%;
+        content: url(./images/hero-desktop.jpg);
+    }
+}
+
+/****** Main Content ******/
 
 .main-content {
     display: flex;
@@ -38,11 +79,27 @@ body {
     margin: 10% auto;
 }
 
+@media only screen and (min-width: 376px) {
+    .main-content {
+        width: 33%;
+        margin: auto;
+        margin-top: 10%;
+        margin-left: 10%;
+        text-align: left;
+    }
+}
+
 .heading {
     font-size: 1.5em;
     letter-spacing: 0.4em;
     margin-bottom: 1em;
     color: hsl(0, 6%, 24%);
+}
+
+@media only screen and (min-width: 376px) {
+    .heading {
+        font-size: 2em;
+    }
 }
 
 .heading-top-line{
@@ -53,6 +110,7 @@ body {
 .main-content > p {
     color: hsl(0, 36%, 70%);
     margin-bottom: 3em;
+    line-height: 24px;
 }
 
 .email-form {
@@ -85,8 +143,8 @@ input[type='email'] {
 }
 
 .email-submit > img {
-    margin: 25%;
-    height: 25px;
+    margin: 20% 40%;
+    height: 50%;
 }
 
 footer {
