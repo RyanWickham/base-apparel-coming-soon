@@ -18,18 +18,24 @@ body {
     font-size: 16px;
 }
 
-.container {
-    display: flex;
+.container-grid {
+    display: grid;
     flex: 1 0 auto;
-    flex-direction: column;
-    margin: 0 auto;
+    grid-template-areas: 'logo''image''main-content';
     width: 100%;
 }
 
 /****** Logo ******/
 
 .logo {
+    grid-area: 'logo';
     margin: 1em 2em;
+}
+
+/****** Image ******/
+.image {
+    grid-area: 'image';
+    width: 100%;
 }
 
 /****** Main Content ******/
@@ -37,6 +43,7 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
+    grid-area: 'main-content';
     text-align: center;
     margin: 10% auto;
     width: 90%;
