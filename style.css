@@ -176,6 +176,13 @@ body {
     margin: 20% 40%;
 }
 
+#errorIcon {
+    position: absolute;
+    right: 23%;
+    top: 15%;
+    height: 2em;
+}
+
 /* the arrow button from 550px - 900px looks off */
 /* need to fix just for this range then set back to orginal at 900px */
 
