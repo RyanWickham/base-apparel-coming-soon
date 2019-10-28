@@ -139,11 +139,18 @@ body {
     position: relative;
     margin: 0 auto;
     width: 100%;
+    text-align: left;
 }
 
-input[type='email'] {
+.email-form > p {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: hsl(0, 36%, 70%)
+}
+
+#emailInput {
     background-color: hsl(0, 100%, 98%);
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(249,98,98,0.1);
     border-radius: 50px;
     box-sizing: border-box;
     height: 60px;

@@ -8,7 +8,7 @@
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src='script.js'></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <style>
     .attribution { font-size: 16px; text-align: center; }
@@ -38,12 +38,13 @@
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
       
       <div class='email-form'>
-        <form>
-          <input type='email' placeholder="Email Address">
-          <div class='email-submit'>
+        <form id='emailForm'>
+          <input id='emailInput' type='text' placeholder="Email Address">
+          <div class='email-submit' onclick='emailSubmitCheck()'>
             <img src='./images/icon-arrow.svg' alt='submit'>
           </div>
         </form>
+        <p id='emailInvalidMessage'></p>
       </div>
     </div>
   </div>
@@ -53,7 +54,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     </p>
     <p>
-      Coded by <a href="#">Ryan Wickham</a>.
+      Coded by <a href="https://github.com/RyanWickham">Ryan Wickham</a>.
     </p>
   </footer>
 </body>
