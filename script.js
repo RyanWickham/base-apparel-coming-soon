@@ -11,6 +11,14 @@ document.addEventListener("DOMContentLoaded", function(e) {
     })
 });
 
+//adds a box-shadow to the div for 1sec then disapaear for user visual feedback
+function emailSubmitDivMouseDown() {
+    document.getElementById('emailSubmitDiv').style.boxShadow = "1px 10px 20px 1px #88888898";
+}
+function emailSubmitDivMouseUp() {
+    document.getElementById('emailSubmitDiv').style.boxShadow = "none";
+}
+
 //check if email is:
 //1) empty 2)not formatted correct and shows error
 function emailSubmitCheck() {

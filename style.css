@@ -176,16 +176,21 @@ body {
     margin: 20% 40%;
 }
 
+/* the arrow button from 550px - 900px looks off */
+/* need to fix just for this range then set back to orginal at 900px */
+@media only screen and (min-width: 560px) and (max-width: 900px){
+    .email-submit {
+        width: 25%;
+    }
+}
+
+
 #errorIcon {
     position: absolute;
     right: 23%;
     top: 15%;
     height: 2em;
 }
-
-/* the arrow button from 550px - 900px looks off */
-/* need to fix just for this range then set back to orginal at 900px */
-
 
 /****** Footer ******/
 
