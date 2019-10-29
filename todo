@@ -1,0 +1,25 @@
+---Accessibility---
+
+This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard.
+Submit buttons are INPUT elements with type attribute submit or image, or BUTTON elements with type submit or omitted/invalid.
+    Context:<form id="emailForm"><input id="emailInpu...</form>
+
+This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined,
+aria-label undefined, aria-labelledby undefined.
+    Context:<input id="emailInput" type="text" placeholder="Email Address">
+
+This form field should be labelled in some way. Use the label element (either with a for attribute or wrapped around the form field),
+or title, aria-label or aria-labelledby attributes as appropriate.
+    Context:<input id="emailInput" type="text" placeholder="Email Address">
+
+Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.
+    Context:<img id="errorIcon">
+
+---HTML---
+
+Element img is missing required attribute src.
+    Context:<img id=`errorIcon`>
+
+An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives
+for images.
+    Context:<img id=`errorIcon`>
