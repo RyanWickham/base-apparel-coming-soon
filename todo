@@ -1,9 +1,0 @@
----Accessibility---
-
-This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard.
-Submit buttons are INPUT elements with type attribute submit or image, or BUTTON elements with type submit or omitted/invalid.
-    Context:<form id="emailForm"><input id="emailInpu...</form>
-
-This form field should be labelled in some way. Use the label element (either with a for attribute or wrapped around the form field),
-or title, aria-label or aria-labelledby attributes as appropriate.
-    Context:<input id="emailInput" type="text" placeholder="Email Address">

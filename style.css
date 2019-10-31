@@ -16,7 +16,7 @@ body {
     font-size: 16px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
     body {
         background-image: url('./images/bg-pattern-desktop.svg');
     }
@@ -30,7 +30,7 @@ body {
     width: 100%;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
     .container {
         flex-wrap: wrap;
         height: 100%;
@@ -43,7 +43,7 @@ body {
     margin: 1em 2em;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
     .logo {
         margin-left: 10%;
         position: absolute;
@@ -66,7 +66,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
     .image {
         align-self: flex-end;
         margin: 10% 0;
@@ -99,7 +99,7 @@ body {
     width: 90%;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 650px) {
     .main-content {
         margin: auto;
         margin-left: 10%;
@@ -131,6 +131,13 @@ body {
     color: hsl(0, 36%, 70%);
     line-height: 24px;
     margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 650px){
+    .main-content > p {
+        margin: 0 auto 3em auto;
+        width: 70%;
+    }
 }
 
 /****** Email Address Form ******/
@@ -177,7 +184,7 @@ body {
     margin: 20% 40%;
 }
 
-/* the arrow button from 550px - 900px looks off */
+/* the arrow button from 560px - 900px looks off */
 /* need to fix just for this range then set back to orginal at 900px */
 @media only screen and (min-width: 560px) and (max-width: 900px){
     .email-submit {
