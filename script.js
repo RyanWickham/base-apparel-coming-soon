@@ -49,7 +49,7 @@ function displayInvalidEmailMessage() {
     document.getElementById('emailInput').style.borderColor = 'rgba(249,98,98,1)';
 
     //display erro icon
-    document.getElementById('errorIcon').src = './images/icon-error.svg';
+    document.getElementById('errorIcon').style.visibility = 'visible';
 }
 
 
