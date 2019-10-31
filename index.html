@@ -37,16 +37,16 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
       
-      <label class='email-form'>
+      <div class='email-form'>
         <form id='emailForm'>
-          <input id='emailInput' type='text' placeholder="Email Address" name='email'>
+          <label><input id='emailInput' type='text' placeholder="Email Address" name='email'></label>
           <img id='errorIcon' src='./images/icon-error.svg' alt='Error Icon'>
           <div id='emailSubmitDiv' class='email-submit' type='submit' onclick='emailSubmitCheck()' onmousedown="emailSubmitDivMouseDown()" onmouseup="emailSubmitDivMouseUp()">
             <img src='./images/icon-arrow.svg' alt='submit'>
           </div>
         </form>
         <p id='emailInvalidMessage'></p>
-      </label>
+      </div>
     </div>
   </div>
   
