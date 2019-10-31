@@ -150,6 +150,7 @@ body {
 
 #emailInput {
     background-color: hsl(0, 100%, 98%);
+    border-style: solid;
     border-color: rgba(249,98,98,0.1);
     border-radius: 50px;
     box-sizing: border-box;
