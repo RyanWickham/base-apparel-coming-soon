@@ -1,6 +1,6 @@
 //waits till the HTML is loaded then add event listeners
 document.addEventListener("DOMContentLoaded", function(e) {
-    //prevent the page from relading when user presses enter key in email field
+    //prevent the page from relading when user presses enter key in email field if the email is invalid
     document.getElementById('emailInput').addEventListener('keypress', event => {
         if(event.key != 'Enter'){
             return true;
@@ -8,15 +8,21 @@ document.addEventListener("DOMContentLoaded", function(e) {
             event.preventDefault();
             emailSubmitCheck();
         }
-    })
+    });
+
+    //prevent page reloading when submit button is clicked if email is invalid
+    document.getElementById('emailSubmitButton').addEventListener('click', event => {
+        event.preventDefault();
+        emailSubmitCheck();
+    });
 });
 
 //adds a box-shadow to the div for 1sec then disapaear for user visual feedback
-function emailSubmitDivMouseDown() {
-    document.getElementById('emailSubmitDiv').style.boxShadow = "1px 10px 20px 1px #88888898";
+function emailSubmitButtonMouseDown() {
+    document.getElementById('emailSubmitButton').style.boxShadow = "1px 10px 20px 1px #88888898";
 }
-function emailSubmitDivMouseUp() {
-    document.getElementById('emailSubmitDiv').style.boxShadow = "none";
+function emailSubmitButtonMouseUp() {
+    document.getElementById('emailSubmitButton').style.boxShadow = "none";
 }
 
 //check if email is:
